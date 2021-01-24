@@ -8,7 +8,7 @@
   Written by Peter Jansen and Nathan Seidle (SparkFun)
   BSD license, all text above must be included in any redistribution.
  *****************************************************/
-
+/* rt mod by deecobrasus */
 #include "MAX30105.h"
 
 // Status Registers
