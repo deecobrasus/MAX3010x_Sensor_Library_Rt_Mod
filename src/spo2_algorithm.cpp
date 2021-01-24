@@ -59,6 +59,8 @@
 
 #include "Arduino.h"
 #include "spo2_algorithm.h"
+static  int32_t an_x[ BUFFER_SIZE]; //ir
+static  int32_t an_y[ BUFFER_SIZE]; //red
 
 #if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168__)
 //Arduino Uno doesn't have enough SRAM to store 100 samples of IR led data and red led data in 32-bit format
