@@ -53,6 +53,10 @@ class MAX30105 {
   uint32_t getRed(void); //Returns immediate red value
   uint32_t getIR(void); //Returns immediate IR value
   uint32_t getGreen(void); //Returns immediate green value
+  uint32_t getRedNoSafe(void); //Returns immediate red with nosafe check
+  uint32_t getIRNoSafe(void); //Returns immediate IR value with nosafe check
+  uint32_t getGreenNoSafe(void); //Returns immediate green value with nosafe check
+
   bool safeCheck(uint8_t maxTimeToCheck); //Given a max amount of time, check for new data
 
   // Configuration

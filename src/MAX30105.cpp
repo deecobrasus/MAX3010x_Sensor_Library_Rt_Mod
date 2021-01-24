@@ -525,6 +525,24 @@ uint8_t MAX30105::available(void)
   return (numberOfSamples);
 }
 
+//Report the most recent red value with nosafe check
+uint32_t MAX30105::getRedNoSafe(void)
+{
+    return (sense.red[sense.head]);
+}
+
+//Report the most recent IR value with nosafe check
+uint32_t MAX30105::getIRNoSafe(void)
+{
+    return (sense.IR[sense.head]);
+}
+
+//Report the most recent Green value with nosafe check
+uint32_t MAX30105::getGreenNoSafe(void)
+{
+    return (sense.green[sense.head]);
+}
+
 //Report the most recent red value
 uint32_t MAX30105::getRed(void)
 {
